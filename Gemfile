@@ -36,6 +36,18 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# 追加gem-----------------------------------------
+gem 'devise'
+gem 'refile', require: "refile/rails", github: 'manfe/refile'
+gem 'refile-mini_magick'
+gem 'kaminari','~> 1.2.1'
+gem 'payjp'
+gem 'jquery-rails'
+gem 'dotenv-rails'
+gem 'bootstrap', '~> 4.1.1'
+gem 'jp_prefecture'
+
+gem 'faker', '2.1.2' #faker追加
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -54,6 +66,7 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
+  gem 'rspec-rails'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
 end
